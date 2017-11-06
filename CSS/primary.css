@@ -9,7 +9,8 @@ body
 {
     display:                    grid;
     grid-template-areas:        "HDR"
-                                "SPL";
+                                "SPL"
+                                "INT";
     
 }
 
