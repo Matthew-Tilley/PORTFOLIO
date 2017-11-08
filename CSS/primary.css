@@ -11,7 +11,8 @@ body
     grid-template-areas:        "HDR01"
                                 "SEC01"
                                 "SEC02"
-                                "SEC03";
+                                "SEC03"
+                                "SEC04";
     
 }
 
@@ -46,10 +47,26 @@ body
 #SEC03
 {
     display:                    none;
+    
+    top:                        0;
+    left:                       0;
+    height:                     100vh;
+    width:                      100vw;
+    position:                   fixed;
+    
+    background-color:           antiquewhite;
 }
 
 #SEC04
 {
     display:                    none;
+    
+    top:                        0;
+    left:                       0;
+    height:                     100vh;
+    width:                      100vw;
+    position:                   fixed;
+    
+    background-color:           aqua;
 }
 
