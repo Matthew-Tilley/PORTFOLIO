@@ -13,7 +13,7 @@ $(document).ready(function()
     
     
     
-    $("#BTN04").on("click", function()
+    $("#BTN02").on("click", function()
     {
         $("#SEC04").show();
         
