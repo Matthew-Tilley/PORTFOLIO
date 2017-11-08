@@ -8,15 +8,16 @@
 body
 {
     display:                    grid;
-    grid-template-areas:        "HDR"
-                                "SPL"
-                                "INT";
+    grid-template-areas:        "HDR01"
+                                "SEC01"
+                                "SEC02"
+                                "SEC03";
     
 }
 
 #HDR01
 {
-    grid-area:                  HDR;
+    grid-area:                  HDR01;
     
     display:                    flex;
     justify-content:            flex-start;
@@ -29,7 +30,7 @@ body
 
 #SEC01
 {
-    grid-area:                  SPL;
+    grid-area:                  SEC01;
     
     height:                     45vh;
     
@@ -38,7 +39,12 @@ body
 
 #SEC02
 {
-    grid-area:                  INT;
+    grid-area:                  SEC02;
     
+}
+
+#SEC03
+{
+    display:                    none;
 }
 
