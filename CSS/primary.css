@@ -14,7 +14,7 @@ body
     
 }
 
-#HDR
+#HDR01
 {
     grid-area:                  HDR;
     
@@ -27,7 +27,7 @@ body
     background-color:           darkgrey;
 }
 
-#SPL
+#SEC01
 {
     grid-area:                  SPL;
     
@@ -36,7 +36,7 @@ body
     background-color:           darkslategrey;
 }
 
-#INT
+#SEC02
 {
     grid-area:                  INT;
     
