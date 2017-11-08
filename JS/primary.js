@@ -6,7 +6,10 @@ $(document).ready(function()
         $("#SEC03").show();
     });
     
-    
+    $("#SEC03").on("click", function()
+    {
+        $("#SEC03").hide();
+    });
     
   
     
