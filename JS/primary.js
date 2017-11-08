@@ -11,6 +11,17 @@ $(document).ready(function()
         $("#SEC03").hide();
     });
     
+    
+    
+    $("#BTN04").on("click", function()
+    {
+        $("#SEC04").show();
+        
+        $("#SEC04").on("click", function()
+        {
+            $("#SEC04").hide();
+        });
+    });
   
     
 });
