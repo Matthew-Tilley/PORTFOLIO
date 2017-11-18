@@ -1,9 +1,15 @@
+/********* GLOBAL - CSS RESET *********/
+
 *
 {
     margin:                     0;
     padding:                    0;
     font-size:                  10px;
 }
+
+
+
+/********* GLOBAL - STANDARD HTML ELEMENTS *********/
 
 body
 {
@@ -16,7 +22,88 @@ body
     
 }
 
-#HDR01
+
+
+/********* ALL - HEADINGS (VARIOUS) *********/
+
+.H2T01
+{
+    font-size:                  2.5rem;
+    font-family:                'Audiowide', cursive;
+    color:                      #BBBDBE;
+}
+
+.H2T02
+{
+    font-family:                    'Poiret One', cursive;
+    font-size:                       3.45rem;
+    color:                           #BBBDBE;
+    opacity:                        .8; 
+}
+
+.H2T03
+{
+    font-family:                'Audiowide', cursive;
+    font-size:                  1.5rem;
+    color:                      #E21E11;
+    margin:                     1rem;
+}
+
+.H3T01
+{
+    font-family:                'PT Sans', sans-serif;
+    font-size:                  1.5rem;
+    color:                      #BBBDBE;
+}
+
+.H4T01
+{
+    margin:                     2rem;
+    text-align:                 justify;
+    
+    font-family:                'PT Sans', sans-serif;
+    font-size:                  1.75rem;
+    color:                      gray;
+}
+
+.H5T01
+{
+    text-align: center;
+    
+    font-size:                  1rem;
+    font-family:                'PT Sans', sans-serif;
+    color:                      gray;
+}
+
+.H6T01
+{
+    text-align: center;
+    
+    font-size:                  .75rem;
+    font-family:                'PT Sans', sans-serif;
+    color:                      gray;
+}
+
+
+
+/********* CLASSES - PARAGARPHS (PATXX) *********/
+
+.PAT01
+{
+    padding:                    2rem 2rem 0rem 2rem;
+    
+    font-family:                'PT Sans', sans-serif;
+    font-size:                  1.5rem;
+    text-align:                 justify;
+    color:                      #BBBDBE;
+   
+}
+
+
+
+/********* ALL - NAMED ELEMENTS *********/
+
+#HDRT01
 {
     grid-area:                  HDR01;
     
@@ -29,44 +116,379 @@ body
     background-color:           darkgrey;
 }
 
+.FTRT01
+{
+    display:                    flex;
+    flex-direction:             column;
+    align-items:                center;
+    justify-content:            center;
+    
+    height:                     100px;
+    width:                      320px;
+    margin-top:                 1rem;
+    
+    background-image:           url("../ASSETS/BACKGROUNDS/TEXTURES/BG_DIAMPLT_320_100.jpg");
+    background-repeat:          no-repeat;
+    background-size:            cover;
+}
+
+
+
+
+
+/********* ID'S - SECTIONS (SECXX) *********/
+
 #SEC01
 {
-    grid-area:                  SEC01;
     
-    height:                     45vh;
+    display:                    flex;
+    flex-direction:             column;
+    justify-content:            space-around;
+    align-items:                center;
     
+    height:                     60vh;
+    
+    background-image:           url("../ASSETS/BACKGROUNDS/TEXTURES/43585661_SMALL.jpg");
+    background-repeat:          no-repeat;
+    background-size:            cover;
     background-color:           darkslategrey;
 }
 
 #SEC02
 {
-    grid-area:                  SEC02;
+    
+    display:                    flex;
+    flex-direction:             column;
+    
+    align-items:                center;
+    
+    background:                 #303030;
     
 }
 
 #SEC03
 {
+    
     display:                    none;
     
-    top:                        0;
-    left:                       0;
-    height:                     100vh;
+    top:                        0px;
+    left:                       0px;
+   
     width:                      100vw;
-    position:                   fixed;
+        
+    position:                   absolute;
+    z-index:                    1;
     
-    background-color:           antiquewhite;
+    background-color:           #303030;
 }
 
 #SEC04
 {
+        
     display:                    none;
+    flex-direction:             column;
+    align-items:                center;
     
     top:                        0;
     left:                       0;
-    height:                     100vh;
     width:                      100vw;
-    position:                   fixed;
+    z-index:                    1;
     
-    background-color:           aqua;
+    position:                   absolute;
+    overflow-y:                 scroll;
+        
+    background-color:           #303030;
+   
 }
 
+
+
+/********* CLASSES - LAYOUT CONTAINERS (LOCTXX) *********/
+
+.LOCT01
+{
+    display:                    flex;
+    flex-direction:             column;
+    align-items:                center;
+    
+    margin:                     3rem 0 3rem 0;
+}
+
+.LOCT02
+{
+    display:                    flex;
+    justify-content:            center;
+    align-items:                center;     
+}
+
+.LOCT03
+{
+    height:                    15vh;  
+}
+
+.LOCT04
+{
+    display:                    flex;
+    justify-content:            space-between;
+    align-items:                center;
+    
+    margin:                    2rem 2rem 0 2rem;
+    border:                     none;
+    
+    background-image:           url("../ASSETS/BACKGROUNDS/TEXTURES/BG_DRKGRY_640_218.jpg");
+    background-repeat:          no-repeat;
+    background-size:            cover;
+        
+}
+
+.LOCT05
+{
+    display:                    flex;
+    flex-direction:             column;
+    justify-content:            space-around;
+    align-items:                flex-end;
+    
+    margin-left:                2.5rem;
+
+}
+
+.LOCT06
+{
+    display:                    flex;
+    justify-content:            space-around;
+    align-items:                center;
+    
+    margin:                     2rem 2rem 0 2rem;
+}
+
+.LOCT07
+{
+    display:                    flex;
+    flex-direction:             column;
+    align-items:                center;
+    justify-content:            space-around;
+                
+        
+}
+
+.LOCT08
+{
+    display:                        flex;
+    flex-direction:                 column;
+    justify-content:                space-between;
+    align-items:                    center;
+    
+    height:                         100px;
+    padding:                        2rem;
+    
+    background-image:               url(../ASSETS/BACKGROUNDS/TEXTURES/BG_DIAMPLT_320_100.jpg);
+    background-repeat:              no-repeat;
+    background-size:                cover;
+}
+
+.LOCT09
+{
+    display:                    flex;
+    align-items:                center;
+    justify-content:            ;
+    
+}
+
+.LOCT10
+{
+    display:                    flex;
+    flex-direction:             column;
+    align-items:                center;
+    justify-content:            space-around;
+    
+    margin:                     4rem 0 1rem 0;
+}
+
+.LOCT12
+{
+    display:                    flex;
+    justify-content:            center;
+    align-items:                center;
+    
+    margin:                     2rem;
+}
+
+.LOCT13
+{
+    display:                    flex;
+    flex-direction:             column;
+    justify-content:            space-around;
+    align-items:                center;
+}
+
+
+
+
+/********* CLASSES - IMAGE TYPES (IMGTXX) *********/
+
+.IMGT03
+{
+    
+    height:                     109.94px;
+    width:                      61.18px;
+}
+
+.IMGT04
+{
+    
+    height:                     197px;
+    width:                      287px;
+    
+    margin:                     2rem 2rem 0 2rem;
+}
+
+.IMGT05
+{
+    height:                         69px;
+    width:                          287px;
+   
+}
+
+
+/********* CLASSES - LOGO TYPES (LOGTXX) *********/
+
+.LOGT01
+{
+    height:                     48px;
+    width:                      40px;
+}
+
+
+
+/********* ALL - BUTTONS (BTNTXX) *********/
+
+.BTNT01
+{
+    
+    height:                     74px;
+    width:                      287px;
+    margin:                      0 0 2rem 0;
+    
+    
+    background-image:           url(../ASSETS/BACKGROUNDS/TEXTURES/BG_DIAMPLT_320_100.jpg);
+    background-repeat:          no-repeat;
+    background-size:            cover;
+    background-color:           transparent;
+    
+    border:                     none;
+    
+    font-family:                'Audiowide', cursive;
+    font-size:                  2.5rem;
+    color:                      #E21E11;
+}
+
+
+/********* ALL - ICON SECTION (ICN) *********/
+
+.ICNT01 
+{
+    height:                     60px;
+    width:                      60px;
+    margin:                     1rem;
+}
+
+.ICNT02
+{
+    height:                     100px;
+    width:                      100px;
+    margin:                     2rem;
+    
+}
+
+#ICN-LOC-01     /*OPERATING SYSTEMS */   
+{
+    display:                    grid;
+    grid-template-areas:        "ICN01 ICN02 ICN03";
+}
+
+#ICN-LOC-02    /*CODING LANGUAGES*/
+{
+    display:                    grid;
+    grid-template-areas:        "ICN04 ICN05 ICN06"
+                                "ICN07 ICN08 ICN09";
+}
+
+#ICN-LOC-03    /*VERSION CONTROL*/
+{
+    display:                    grid;
+    grid-template-areas:        "ICN10 ICN11 ICN12"
+                                "ICN13 ICN14 .....";
+}
+
+#ICN-LOC-04    /*CODE EDITORS*/
+{
+    display:                    grid;
+    grid-template-areas:        "ICN15 ICN16 ICN17"
+                                "ICN18 ICN19 ICN20";
+}
+
+#ICN-LOC-05     /*DIGITAL ART*/
+{
+    display:                    grid;
+    grid-template-areas:        "ICN21 ICN22 ICN23"
+                                "ICN24 ICN25 ICN26"
+                                "..... ICN27 .....";
+}
+
+#ICN-LOC-06     /*AUDIO WORK*/
+{
+    display:                    grid;
+    grid-template-areas:        "ICN28 ICN29 ICN30";
+    margin-bottom:              4rem;
+}
+
+.MODT01
+{
+    display:                    none;
+    
+    height:                     auto;
+    width:                      90vw;
+    position:                   fixed;
+    top:                        50%;
+    left:                       50%;
+    transform:                  translate(-50%, -50%);
+    padding:                    2rem;
+    
+    background:                 rgb(0, 0, 0, 0.8);
+}
+
+
+#ICN01  {grid-area:                  ICN01;}
+#ICN02  {grid-area:                  ICN02;}
+#ICN03  {grid-area:                  ICN03;}
+#ICN04  {grid-area:                  ICN04;}
+#ICN05  {grid-area:                  ICN05;}
+#ICN06  {grid-area:                  ICN06;}
+#ICN07  {grid-area:                  ICN07;}
+#ICN08  {grid-area:                  ICN08;}
+#ICN09  {grid-area:                  ICN09;}
+#ICN10  {grid-area:                  ICN10;}
+#ICN11  {grid-area:                  ICN11;}
+#ICN12  {grid-area:                  ICN12;}
+#ICN13  {grid-area:                  ICN13;}
+#ICN14  {grid-area:                  ICN14;}
+#ICN15  {grid-area:                  ICN15;}
+#ICN16  {grid-area:                  ICN16;}
+#ICN17  {grid-area:                  ICN17;}
+#ICN18  {grid-area:                  ICN18;}
+#ICN19  {grid-area:                  ICN19;}
+#ICN20  {grid-area:                  ICN20;}
+#ICN21  {grid-area:                  ICN21;}
+#ICN22  {grid-area:                  ICN22;}
+#ICN23  {grid-area:                  ICN23;}
+#ICN24  {grid-area:                  ICN24;}
+#ICN25  {grid-area:                  ICN25;}
+#ICN26  {grid-area:                  ICN26;}
+#ICN27  {grid-area:                  ICN27;}
+
+
+.test
+{
+    font-size:          2rem;
+    color: white;
+}
