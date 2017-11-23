@@ -5,7 +5,7 @@ $(document).ready(function()
     $("#BTN01").on("click", function()      /*OPENS #SEC03*/
     {
         $(".LOCT11").hide();
-        $("#SEC03").show();      
+        $("#SEC03").css("display", "flex");      
         
              
         $("#SEC03").on("click", function()      /*CLOSES #SEC03*/
@@ -53,7 +53,7 @@ $(document).ready(function()
         
         
         /* THIS IS THE ABOVE CODE - JUST WITH A CLICK EVENT HANDLER INSTEAD */
-        $(".ICNT01").on("click", function()
+        /* $(".ICNT01").on("click", function()
         {
             var a = $(this).attr("id") + "-A";
 
@@ -69,6 +69,30 @@ $(document).ready(function()
                 });
             });
             
+        }); */
+
+
+        $(".ICNT01").on("click", function()
+        {
+            var a = $(this).attr("id") + "-A";
+
+            console.log(a);
+            
+            var b = document.getElementById(a);
+
+            $(b).show(function()
+            {
+                
+                function autoClose()
+                {
+                    $(b).fadeOut(500);
+                }
+            
+                setTimeout(autoClose, 1300);
+            
+            });
+
+
         });
         
 

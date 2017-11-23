@@ -13,12 +13,14 @@
 
 body
 {
-    display:                    grid;
-    grid-template-areas:        "HDR01"
-                                "SEC01"
+    display:                     grid;
+    grid-template-areas:        "SEC01"
                                 "SEC02"
-                                "SEC03"
-                                "SEC04";
+                                "FTR01";
+    
+    min-width:                  320px;
+    
+   
     
 }
 
@@ -49,10 +51,18 @@ body
     margin:                     1rem;
 }
 
+.H2T04
+{
+    
+    font-family:                'PT Sans Narrow', sans-serif;
+    font-size:                  2.5rem;
+    color:                      white;
+}
+
 .H3T01
 {
     font-family:                'PT Sans', sans-serif;
-    font-size:                  1.5rem;
+    font-size:                  1.75rem;
     color:                      #BBBDBE;
 }
 
@@ -70,7 +80,7 @@ body
 {
     text-align: center;
     
-    font-size:                  1rem;
+    font-size:                  1.125rem;
     font-family:                'PT Sans', sans-serif;
     color:                      gray;
 }
@@ -79,7 +89,7 @@ body
 {
     text-align: center;
     
-    font-size:                  .75rem;
+    font-size:                  1rem;
     font-family:                'PT Sans', sans-serif;
     color:                      gray;
 }
@@ -90,13 +100,24 @@ body
 
 .PAT01
 {
+    width:                      90vw;
     padding:                    2rem 2rem 0rem 2rem;
     
     font-family:                'PT Sans', sans-serif;
     font-size:                  1.5rem;
     text-align:                 justify;
-    color:                      #BBBDBE;
+    color:                      #DEDEDE;
    
+}
+
+.PAT02
+{
+    padding:                    2rem 2rem 0rem 2rem;
+    
+    font-family:                'PT Sans Narrow', sans-serif;
+    font-size:                  1.75rem;
+    text-align:                 justify;
+    color:                      #BBBDBE;   
 }
 
 
@@ -105,7 +126,7 @@ body
 
 #HDRT01
 {
-    grid-area:                  HDR01;
+    
     
     display:                    flex;
     justify-content:            flex-start;
@@ -118,14 +139,17 @@ body
 
 .FTRT01
 {
+    grid-area:                  FTR01;
+    
     display:                    flex;
     flex-direction:             column;
     align-items:                center;
     justify-content:            center;
     
-    height:                     100px;
-    width:                      320px;
+    
+    width:                      100vw;
     margin-top:                 1rem;
+    padding:                    1rem 0 1rem 0;
     
     background-image:           url("../ASSETS/BACKGROUNDS/TEXTURES/BG_DIAMPLT_320_100.jpg");
     background-repeat:          no-repeat;
@@ -140,14 +164,15 @@ body
 
 #SEC01
 {
+    grid-area:                  SEC01;
     
     display:                    flex;
     flex-direction:             column;
     justify-content:            space-around;
     align-items:                center;
     
-    height:                     60vh;
-    
+    padding:                    4rem 0 4rem 0;
+
     background-image:           url("../ASSETS/BACKGROUNDS/TEXTURES/43585661_SMALL.jpg");
     background-repeat:          no-repeat;
     background-size:            cover;
@@ -156,9 +181,12 @@ body
 
 #SEC02
 {
+    grid-area:                  SEC02;
     
     display:                    flex;
     flex-direction:             column;
+    
+    width:                      100vw;
     
     align-items:                center;
     
@@ -170,6 +198,8 @@ body
 {
     
     display:                    none;
+    flex-direction:             column;
+    align-items:                center;
     
     top:                        0px;
     left:                       0px;
@@ -232,8 +262,11 @@ body
     justify-content:            space-between;
     align-items:                center;
     
-    margin:                    2rem 2rem 0 2rem;
+    width:                      90vw;
+    margin:                     2rem 2rem 0 2rem;
+    padding-top:                .75rem;
     border:                     none;
+    
     
     background-image:           url("../ASSETS/BACKGROUNDS/TEXTURES/BG_DRKGRY_640_218.jpg");
     background-repeat:          no-repeat;
@@ -245,8 +278,10 @@ body
 {
     display:                    flex;
     flex-direction:             column;
-    justify-content:            space-around;
+    justify-content:            center;
     align-items:                flex-end;
+    
+  
     
     margin-left:                2.5rem;
 
@@ -255,10 +290,12 @@ body
 .LOCT06
 {
     display:                    flex;
-    justify-content:            space-around;
+    justify-content:            center;
     align-items:                center;
     
-    margin:                     2rem 2rem 0 2rem;
+    width:                      100vw;
+    
+    opacity:                    .2;
 }
 
 .LOCT07
@@ -321,6 +358,15 @@ body
     align-items:                center;
 }
 
+.LOCT14
+{
+    display:                    flex;
+    justify-content:            flex-end;
+    align-items:                flex-end;
+    height:                     100%;
+
+}
+
 
 
 
@@ -328,35 +374,53 @@ body
 
 .IMGT03
 {
-    
-    height:                     109.94px;
-    width:                      61.18px;
+    height:                     18vh;
+    width:                      20vw;
 }
 
 .IMGT04
 {
     
-    height:                     197px;
-    width:                      287px;
+   
+    margin:                 2rem 0 0 0;
     
-    margin:                     2rem 2rem 0 2rem;
+    
 }
 
 .IMGT05
 {
-    height:                         69px;
-    width:                          287px;
+    width:                  90vw;
+    margin-top:             2rem;
    
+}
+
+.IMGT06
+{
+    margin-top:                     2rem;   
 }
 
 
 /********* CLASSES - LOGO TYPES (LOGTXX) *********/
 
+
 .LOGT01
+{
+   
+  
+    
+}
+
+
+.LOGT02
 {
     height:                     48px;
     width:                      40px;
+    
+    margin-bottom:              1rem;
 }
+
+
+
 
 
 
@@ -365,9 +429,10 @@ body
 .BTNT01
 {
     
-    height:                     74px;
-    width:                      287px;
-    margin:                      0 0 2rem 0;
+    
+    width:                      90vw;
+    margin:                     0 0 2rem 0;
+    padding:                    2rem;
     
     
     background-image:           url(../ASSETS/BACKGROUNDS/TEXTURES/BG_DIAMPLT_320_100.jpg);
@@ -411,6 +476,8 @@ body
     display:                    grid;
     grid-template-areas:        "ICN04 ICN05 ICN06"
                                 "ICN07 ICN08 ICN09";
+    
+  
 }
 
 #ICN-LOC-03    /*VERSION CONTROL*/
@@ -451,10 +518,11 @@ body
     position:                   fixed;
     top:                        50%;
     left:                       50%;
+    z-index:                    3;
     transform:                  translate(-50%, -50%);
     padding:                    2rem;
     
-    background:                 rgb(0, 0, 0, 0.8);
+    background:                 #151515;
 }
 
 
@@ -487,8 +555,77 @@ body
 #ICN27  {grid-area:                  ICN27;}
 
 
-.test
+@media (min-width: 375px)          /* BREAKPOINT @ 375px*/
 {
-    font-size:          2rem;
-    color: white;
+     
+    .LOCT04
+    {
+        width:                      80vw;
+    }
+    
+    .LOCT06
+    {
+        width:                      80vw;
+    }
+    
+    .PAT01
+    {
+        width:                      80vw;
+        
+        font-size:                  1.75rem;
+    }
+    
+    .BTNT01
+    {
+        width:                      80vw;
+        height:                     auto;
+    }
+    
+    .IMGT05
+    {
+        width:                      90vw;
+    }
+    
+    
+  
+}
+
+
+@media (min-width: 500px)
+{
+    
+    .H2T03
+    {
+        font-size:                  2rem;
+    }
+    
+    
+    
+    .PAT01
+    {
+        width:                      80vw;
+        font-size:                  2rem;
+    }
+    
+    .BTNT01
+    {
+        width:                      80vw;
+        
+        font-size:                  3rem;
+    }
+    
+    .LOGT01
+    {
+        
+       
+  
+    }
+    
+    .LOGT02
+    {
+        
+    }
+    
+    
+    
 }
