@@ -18,15 +18,22 @@ body
                                 "SEC02"
                                 "FTR01";
     
-    min-width:                  320px;
-    
-   
-    
+    min-width:                  320px;  
 }
 
 
 
 /********* ALL - HEADINGS (VARIOUS) *********/
+
+
+.H1T01
+{
+    margin-top:                 2rem;
+    font-size:                  1.9rem;
+    font-family:                'Audiowide', cursive;
+    color:                      #BBBDBE;
+}
+
 
 .H2T01
 {
@@ -57,6 +64,14 @@ body
     font-family:                'PT Sans Narrow', sans-serif;
     font-size:                  2.5rem;
     color:                      white;
+}
+
+.H2T05
+{
+    margin:                     0 10vw 0 0;
+    font-size:                  2.5rem;
+    font-family:                'Audiowide', cursive;
+    color:                      #BBBDBE;
 }
 
 .H3T01
@@ -124,17 +139,21 @@ body
 
 /********* ALL - NAMED ELEMENTS *********/
 
-#HDRT01
-{
-    
-    
+.HDRT01
+{    
     display:                    flex;
-    justify-content:            flex-start;
-    align-items:                center;
+    justify-content:            space-between;
+    align-items:              center;
     
-    height:                     12vh;
+   
     
-    background-color:           darkgrey;
+    height:                     15vh;
+    width:                      100vw;
+    padding:                    0vh 10vw 0vh 10vw;
+    
+    background-image:           url(../ASSETS/BACKGROUNDS/TEXTURES/BG_DIAMPLT_320_100.jpg);
+    background-repeat:          no-repeat;
+    background-size:            cover;
 }
 
 .FTRT01
@@ -295,7 +314,7 @@ body
     
     width:                      100vw;
     
-    opacity:                    .2;
+    opacity:                    .7;
 }
 
 .LOCT07
@@ -399,6 +418,28 @@ body
     margin-top:                     2rem;   
 }
 
+.IMGT07
+{
+    width:                  90vw;
+}
+
+.IMGT08
+{
+    width:                  90vw;
+    height:                 auto;
+    margin-top:             1rem;
+}
+
+
+/********* CLASSES - VIDEO TYPES (VIDTXX) *********/
+
+.VIDT01
+{
+    width:                      90vw;
+    margin-top:                 2rem;
+}
+
+
 
 /********* CLASSES - LOGO TYPES (LOGTXX) *********/
 
@@ -417,6 +458,14 @@ body
     width:                      40px;
     
     margin-bottom:              1rem;
+}
+
+.LOGT03
+{
+    height:                     53px;
+    width:                      44px;
+    margin:                     0 0 0 10vw;
+   
 }
 
 
@@ -444,7 +493,8 @@ body
     
     font-family:                'Audiowide', cursive;
     font-size:                  2.5rem;
-    color:                      #E21E11;
+    color:                      #BBBDBE;
+    /*color:                      #E21E11;*/
 }
 
 
@@ -583,7 +633,12 @@ body
     
     .IMGT05
     {
-        width:                      90vw;
+        width:                      80vw;
+    }
+    
+    .IMGT07
+    {
+        width:                      80vw;
     }
     
     

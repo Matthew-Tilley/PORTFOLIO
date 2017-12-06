@@ -101,13 +101,11 @@ $(document).ready(function()
 
     });
     
+
+   
     
-    
+
   
-    
-   
-    
-   
     
     /*$("#IMG-DW01").show();     */
     /*MAKE THIS INTO A CYCLING FADER*/
